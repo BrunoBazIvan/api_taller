@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url("../img/Fondo/descarga.jpeg");
+} 
+
+.fondo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tituloIndex {
+    font-family: 'MedievalSharp', cursive;
+    text-shadow:  5px 5px 5px black;
+    text-align: center;
+}
+.container-titulo{
+    background-image: url(../img/Fondo/9\ hermosas\ texturas\ de\ madera\ gratis.jpeg);
+    background-position: center;
+    color: #fff;
+    margin: 5%;
+    box-shadow: 10px 5px 5px black;
+    padding: 1%;
+    border-radius: 12%;
+}
+
+/*<----------------- Loguin ------------------>*/
+.container-form {
+    width: 30%;
+    background-color: #978f84;
+    padding: 3%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-loguin {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #b7ae8f;
+    margin: auto;
+    margin-top: 10%; /* Ajusta este valor según tu diseño */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mainLoguin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* filtro  del buscador*/
+.filtro{
+    display: none;
+}
+
+/* container row */
+
+#contenedorItems{
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+}
+
+.card{
+    margin: 10px;
+    width: 16rem;
+}
+
+
+  /* Estilo base para la sección */
+  .select{
+    padding: 5px;
+    background-color: #1a1d20; 
+    border: 1px solid #696969; /* Borde gris claro */
+    transition: box-shadow 0.3s ease-in-out; /* Transición suave para la sombra */
+    cursor: pointer; 
+    color:#a09f9f;
+    font-family: 'MedievalSharp', cursive;
+  }
+
+  /* Estilo para la sombra cuando se pasa el cursor por encima */
+  .select:hover {
+    box-shadow: 0 0 10px rgba(60, 60, 196, 0.589); /* Sombra azul al pasar por encima */
+  }
+
+  .select:focus {
+    border-color: rgba(60, 60, 196, 0.589);
+    outline:rgba(60, 60, 196, 0.589) ; 
+  }
+
+  .opcion{
+    font-family: 'MedievalSharp', cursive;
+  }
+.dropDown{
+    position: relative;
+    display:inline-block;
+    margin-right: 10px;
+    margin-top: 2px;
+}
+
+
+
+
+.dropDown:hover{
+    
+    border: rgb(70, 153, 207) solid 1px;
+    box-shadow: 0 0 5px 5px rgb(43, 79, 104);
+    cursor:pointer;
+}
+
+
+
+/* footer*/
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(39, 39, 39);
+}
+.footer{
+    margin-top: 30px;
+    padding: 5px;
+    font-size: large;
+    color: #f1f1f1;
+}
+/* estilos tablas ayudas de master */
+
+/* Estilo de las celdas de la tabla */
+thead{
+    background-color: #d2b48c;
+    font-family:"MedievalSharp", cursive;
+}
+/* Estilo de la tabla */
+table {
+    width: 100%;
+    margin: 20px;
+}
+
+/* Estilo de las celdas de la tabla */
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilo para filas impares */
+tbody tr:nth-child(odd) {
+    background-color: #d2b48c; /* Marrón claro */
+}
+
+/* Estilo para filas pares */
+tbody tr:nth-child(even) {
+    background-color: #f5deb3; /* Beige oscuro */
+}
+
+/* Estilo para las celdas de imagen (oculta la imagen por defecto) */
+td img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+/* Efecto hover (muestra la imagen al pasar el cursor) */
+tbody tr:hover {
+    background-color: #a0522d; /* Marrón más oscuro en hover */
+    color: #ffffff; /* Texto blanco en hover */
+}
+
+tbody tr:hover td img {
+    transition: 0.3s;
+}
+
+.titulo {
+     font-family: 'MedievalSharp', cursive;
+    text-shadow:  5px 5px 5px black;
+    text-align: center;
+}
+.link{
+    text-decoration: none;
+    color: white;
+    margin-right: 5px;
+    
+}
+/* carrito */
+/* Estilo para el contenedor principal del carrito */
+.containerCarrito {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 5%;
+  }
+  
+  /* Estilo para el título del carrito */
+  .tituloCarrito {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo para la lista de productos */
+  #carrito {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Estilo para cada elemento de la lista de productos */
+  #carrito li {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fff;
+  }
+  
+  /* Estilo para el total */
+  .total {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  /* Estilo para los botones */
+  .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  .btn-danger {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+  }
+  
+  /* Estilo para los botones cuando se pasa el ratón por encima */
+  .btn:hover {
+    opacity: 0.8;
+  }
+  
+  .diamond-list li::before {
+    content: "💎";  
+    display: inline-block; 
+    margin-right: 5px; 
+  }
